@@ -1,0 +1,47 @@
+
+//MAKE SURE TO CHANGE ANY PHP FILE TO A .PHP EXTENSION
+
+<xml version="1.0" encoding = "utf-8" >
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<html>
+    <head>
+        <title>Table Request</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <Div> New Client Entry <Div>
+        <h1>
+            <?php
+$servername = "localhost";
+$username = "id80102_homeaze";
+$password = "homeaze16";
+$dbname = "id80102_homeaze";
+
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
+echo "<br>";
+// ACTUAL DATABASE CHANGING CODE
+
+//QUERY
+$sql = "SELECT UUID, Last_Name FROM Client";
+$result = mysqli_query($conn, $sql);
+//Displays Information
+if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo "UUid: " . $row["UUID"]. " - Name: " . $row["Last_Name"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+            ?>
+            </h1>
+    </body>
+</html>
