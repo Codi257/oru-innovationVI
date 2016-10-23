@@ -1,0 +1,1 @@
+INSERT INTO `User` (`Org_ID`, `UserID`, `UserPassword`, `Priviledges`) VALUES ('1', 'admin', 'admin', '1');
