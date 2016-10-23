@@ -1,0 +1,1 @@
+INSERT INTO `Shelter` (`Shelter_ID`, `Shelter_Profile`, `Shelter_Capacity`, `Org_ID`, `Contact_Email`, `Contact`, `Contact_Phone`, `HIV_Only`, `Single_Men`, `Single_Women`, `Families`, `AcceptsSexOffender`, `AcceptsExCons`, `AdultsOnly`, `ReferralRequired`, `SobrietyRequired`) VALUES ('1', 'Men Only', '125', '1', NULL, NULL, NULL, '0', '1', '0', '0', '0', '0', '1', '0', '0');
