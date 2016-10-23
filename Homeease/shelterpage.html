@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html>
+
+
+ <head>
+	<LINK REL="SHORTCUT ICON" HREF ="logo1.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Shelter</title>
+
+    <!-- Bootstrap -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+  
+  <div class="imgcontainer">
+    <img src="logo.png" alt="Avatar" class="avatar">
+  </div>
+  
+  <form action="ShelterSearch.php" method="post" >
+  <div class="container">
+  <p>SHELTER SEARCH</p>
+	<label><b>Zip code/Location:</b></label>
+	  <input type="text" name="zipcode" /><br>
+	<!----Number of space for:
+		--<input type="radio" name="Classification" value="Adult"> Adult
+		--<input type="radio" name="Classification" value="Children"> Children-->
+	<label><b>Space for:</b></label><br>
+	 
+	<label><b>Adult(18+)</b></label>
+	
+	<select name="AdultCount">
+	<option value="zero" selected>0</option>
+	<option value="one" >1</option>
+    <option value="two">2</option>	
+	<option value="three" >3</option>
+    <option value="four">4</option>
+    <option value="five" >5</option>
+    <option value="six">6</option>
+    <option value="seven" >7</option>
+    <option value="eight">8</option>
+    <option value="nine" >9</option>
+    <option value="ten">10</option>
+  
+	</select>
+
+	<label><b>Children(0-17)</b></label>
+	<select name="ChildCount">
+	<option value="zero" selected>0</option>
+	<option value="one" >1</option>
+    <option value="two">2</option>	
+	<option value="three" >3</option>
+    <option value="four">4</option>
+    <option value="five" >5</option>
+    <option value="six">6</option>
+    <option value="seven" >7</option>
+    <option value="eight">8</option>
+    <option value="nine" >9</option>
+    <option value="ten">10</option>
+	</select><br>
+	
+	
+    <label><b>Select all that apply for shelter type:</b></label><br>
+	<input type="checkbox" name="men" value="on"> Men's Only <br>
+	<input type="checkbox" name="women" value="on"> Women's Only <br>
+	<input type="checkbox" name="sex offender" value="on"> Accepts sex offenders <br>
+	<input type="checkbox" name="ex-con" value="on"> Accepts Ex-cons <br>
+	<input type="checkbox" name="family" value="on"> Family <br>
+	<input type="checkbox" name="age" value="on"> Adult(+18) <br>
+	<input type="checkbox" name="referral" value="on"> Referral required <br>
+	<input type="checkbox" name="soberiety" value="on"> Soberiety required <br>
+	  
+	  
+	<button onclick="myFunction ()"> Search</button>
+	
+	</div>	
+</form>
+  </body>
+  </html>
