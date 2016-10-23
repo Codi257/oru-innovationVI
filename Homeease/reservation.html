@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+
+	 <head>
+		<LINK REL="SHORTCUT ICON" HREF ="logo1.png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Make Reservation</title>
+
+		<!-- Bootstrap -->
+		<link href="style.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	  </head>
+	  <body>
+	  
+		<div class="imgcontainer">
+	   <a href = "homepage.html">  <img src="logo.png" alt="Avatar" class="avatar"> </a>
+	  </div>
+	  
+
+	<form action="AddClient.php" method="post" >
+	  <div class="container">
+		<label><b>First Name:</b></label>
+		  <input type="text" name="firstname" />
+		<label><b>Last Name:</b></label>
+		  <input type="text" name="lastname" /><br>
+		
+			<label><b>Body Count</b></label>
+	
+			<select name="BodyCount">
+			<option value="nill" selected>--</option>
+			<option value="one" >1</option>
+			<option value="two">2</option>	
+			<option value="three." >3</option>
+			<option value="four">4</option>
+			<option value="five" >5</option>
+			<option value="six">6</option>
+			</select><br>
+
+			<label><b>Shelter List</b></label>
+	
+			<select name="Shelterlist">
+			<option value="nill" selected>--</option>
+			<option value="one" >1</option>
+			<option value="two">2</option>	
+			<option value="three." >3</option>
+			<option value="four">4</option>
+			<option value="five" >5</option>
+			<option value="six">6</option>
+			</select><br>
+			
+			<label><b>Date</b></label> 
+			 <span class="wsnw">
+			<input type="text" name="annonascita" size="5" maxlength="4" value="2016"> (year with 4 digits)/<select name="mesenascita"><option value="" selected>--</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>/
+		    <select name="giornonascita"><option value="" selected>--</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option>
+			<option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+			<span class="wsnw smlscrfnt"><br>	
+
+			
+			 <button onclick="myFunction ()"> Create Reservation</button>
+	
+		</div>
+	  </form>
+	</body>		
+</html>
